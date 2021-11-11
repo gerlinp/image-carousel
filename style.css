@@ -1,31 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  background: #4A0000;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   margin: 0;
 }
 
+img {
+  height: 755px;
+  width: 510px;
+  min-width: 320px;
+}
+
+
 .carousel {
   box-shadow: 2px 2px 5px rgba(0,0,0, 0.3);
-  height: 100%px;
-  width:540px;
+  width: 510px;
+  height: 100vh;
   overflow: hidden;
+
 }
 
 .image-container {
   display: flex;
-  transform: translateX(0)
+  transform: translateX(0);
+  transition: tranform 0.5s ease-in-out;
 }
 
-img {
-  object-fit: cover;
-  height: 800px;
+.buttons-container {
+  display:flex;
+  justify-content: space-between;
 }
+
+.btn {
+  background: #f8e30c;
+  color: #fc262e;
+  display: inline-block;
+  padding: 0.5rem;
+  cursor: pointer;
+  width: 49.5%;
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.03rem;
+  line-height: 2rem;
+  outline: none;
+  border: none;
+}
+
+/* .btn:focus {
+
+} */
+
+
+
+@media (max-width)
